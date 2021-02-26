@@ -5,9 +5,9 @@ Using the news headlines about a company, we are predicting if its stock price w
 
 The initial lines that are commentes are using pandas, to check the distribution of data year wise, So as to split train and test data accordingly.
 
-0.Train and test datasets are divided based on date.
+    0.Train and test datasets are divided based on date.
 
-1. Data Cleaning
+1. Data Cleaning\
     Train data is obtained by iloc[:,cols-of-texts]
     Data that is non alphabetical [^a-zA-Z] are replaced, regex=True
     
@@ -25,7 +25,7 @@ The initial lines that are commentes are using pandas, to check the distribution
     
     predection is obtained by rf_model.predict(X_test)
     
-4. Metrics
+4. Metrics\
     The predictions are then passed through confusion_matrix, accuracy_score and classification_report
     confusion_matrix(y_test,predictions)
     
